@@ -1,0 +1,15 @@
+@mixin Control($BorSize, $BgColor, $BgColorHover, $BorColor, $BorColorHover, $Color, $Cursor) {
+    display: inline-block;
+    background-color: $BgColor;
+    border-color: $BorColor;
+    border-style: solid;
+    border-width: $BorSize;
+    border-radius: 4px;
+    color: $Color;
+    margin: 2px;
+    &:hover{
+        background-color: $BgColorHover;
+        border-color: $BorColorHover;
+        cursor: $Cursor;
+    }
+}

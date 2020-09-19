@@ -1,0 +1,6 @@
+@mixin Box ($BorSize, $BorColor, $BgColor, $Width, $Height) {
+    border: $BorSize solid $BorColor;
+    background-color: $BgColor;
+    width: $Width;
+    height: $Height;
+}

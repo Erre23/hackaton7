@@ -1,0 +1,14 @@
+@import '../mixins/control';
+
+.Button-Primary {
+    @include Control (2px, rgb(255, 225, 0), rgb(255, 238, 0), rgb(255, 225, 0), rgb(255, 238, 0), rgb(29, 29, 29), default);
+    text-align: center;
+    font-weight: bold;
+    padding: 8px 30px;
+}
+.Button-Secondary{
+    @include Control (2px, rgb(255, 225, 0), rgb(255, 238, 0), rgb(29, 29, 29), rgb(29, 29, 29), rgb(29, 29, 29), pointer);
+    text-align: center;
+    font-weight: bold;
+    padding: 8px 30px;
+}

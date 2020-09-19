@@ -1,0 +1,6 @@
+@import '../mixins/control';
+
+.TextBox {
+    @include Control (2px, default, default, silver, grey, rgb(29, 29, 29), text);
+    padding: 8px;
+}
