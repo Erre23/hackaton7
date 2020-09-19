@@ -33,7 +33,7 @@
 .Button-Primary:hover {
   background-color: #ffee00;
   border-color: #ffee00;
-  cursor: default;
+  cursor: pointer;
 }
 
 .Button-Secondary {
@@ -58,7 +58,7 @@
 
 .TextBox {
   display: inline-block;
-  background-color: default;
+  background-color: white;
   border-color: silver;
   border-style: solid;
   border-width: 2px;
@@ -69,7 +69,7 @@
 }
 
 .TextBox:hover {
-  background-color: default;
+  background-color: white;
   border-color: grey;
   cursor: text;
 }
@@ -188,9 +188,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   padding: inherit;
   color: gray;
   background-color: #fafafa;
@@ -263,13 +266,73 @@
 
 .Container-Section7 {
   grid-area: 'Section7';
-  border: 2px solid red;
-  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: inherit;
+  color: gray;
+  background-color: #ffe100;
 }
 
 .Container-Footer {
   grid-area: 'Footer';
   border: 2px solid red;
   height: 300px;
+}
+
+.Container-Form {
+  max-width: 80%;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'Title Title Title' 'Input1 Input2 Button' 'Subtitle Subtitle Subtitle';
+  grid-gap: 10px;
+}
+
+.Container-Form-Title {
+  grid-area: 'Title';
+}
+
+.Container-Form-Input1 {
+  grid-area: 'Input1';
+}
+
+.Container-Form-Input2 {
+  grid-area: 'Input2';
+}
+
+.Container-Form-Button {
+  grid-area: 'Button';
+}
+
+.Container-Form-Subtitle {
+  grid-area: 'Subtitle';
+}
+
+.Text-Title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: gray;
+}
+
+.Text-Subtitle {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: gray;
+}
+
+.Text-Parrafo {
+  font-size: 0.5rem;
+  font-weight: bold;
+  color: gray;
 }
 /*# sourceMappingURL=style.css.map */

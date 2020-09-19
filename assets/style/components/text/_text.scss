@@ -1,0 +1,13 @@
+@import '../mixins/text';
+
+.Text-Title {
+    @include Text-Title;
+}
+
+.Text-Subtitle {
+    @include Text-Subtitle;
+}
+
+.Text-Parrafo {
+    @include Text-Parrafo;
+}

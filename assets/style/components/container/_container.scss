@@ -60,7 +60,9 @@
     height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
     padding: inherit;
     color: gray;
     background-color: rgb(250, 250, 250);
@@ -117,12 +119,43 @@
 
 .Container-Section7 {
     grid-area: 'Section7';
-    border: 2px solid red;
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: inherit;
+    color: gray;
+    background-color: rgb(255, 225, 0);
 }
 
 .Container-Footer {
     grid-area: 'Footer';
     border: 2px solid red;
     height: 300px;
+}
+
+.Container-Form {
+    max-width: 80%;
+    display: grid;
+    grid-template-areas: 
+        'Title Title Title'
+        'Input1 Input2 Button'
+        'Subtitle Subtitle Subtitle';
+    grid-gap: 10px;
+    &-Title {
+        grid-area: 'Title';
+    }
+    &-Input1 {
+        grid-area: 'Input1';
+    }
+    &-Input2 {
+        grid-area: 'Input2';
+    }
+    &-Button {
+        grid-area: 'Button';
+    }
+    &-Subtitle {
+        grid-area: 'Subtitle';
+    }
 }
